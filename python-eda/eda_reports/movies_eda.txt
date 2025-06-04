@@ -1,0 +1,106 @@
+EDA Report for: Movies
+==================================================
+
+Basic Info:
+Shape: (45466, 24)
+Columns: ['adult', 'belongs_to_collection', 'budget', 'genres', 'homepage', 'id', 'imdb_id', 'original_language', 'original_title', 'overview', 'popularity', 'poster_path', 'production_companies', 'production_countries', 'release_date', 'revenue', 'runtime', 'spoken_languages', 'status', 'tagline', 'title', 'video', 'vote_average', 'vote_count']
+Memory Usage: 82603.44 KB
+
+Data Types:
+adult                     object
+belongs_to_collection     object
+budget                    object
+genres                    object
+homepage                  object
+id                        object
+imdb_id                   object
+original_language         object
+original_title            object
+overview                  object
+popularity                object
+poster_path               object
+production_companies      object
+production_countries      object
+release_date              object
+revenue                  float64
+runtime                  float64
+spoken_languages          object
+status                    object
+tagline                   object
+title                     object
+video                     object
+vote_average             float64
+vote_count               float64
+dtype: object
+
+Column Type Distribution:
+Numerical: 4
+Categorical: 20
+Datetime: 0
+
+Number of duplicate rows (hashable cols only): 17
+
+Columns with null values:
+belongs_to_collection    40972
+homepage                 37684
+imdb_id                     17
+original_language           11
+overview                   954
+popularity                   5
+poster_path                386
+production_companies         3
+production_countries         3
+release_date                87
+revenue                      6
+runtime                    263
+spoken_languages             6
+status                      87
+tagline                  25054
+title                        6
+video                        6
+vote_average                 6
+vote_count                   6
+dtype: int64
+
+Unique Values per Column:
+adult: 5 unique values
+belongs_to_collection: 1698 unique values
+budget: 1226 unique values
+genres: 4069 unique values
+homepage: 7673 unique values
+id: 45436 unique values
+imdb_id: 45417 unique values
+original_language: 92 unique values
+original_title: 43373 unique values
+overview: 44307 unique values
+popularity: 43758 unique values
+poster_path: 45024 unique values
+production_companies: 22708 unique values
+production_countries: 2393 unique values
+release_date: 17336 unique values
+revenue: 6863 unique values
+runtime: 353 unique values
+spoken_languages: 1931 unique values
+status: 6 unique values
+tagline: 20283 unique values
+title: 42277 unique values
+video: 2 unique values
+vote_average: 92 unique values
+vote_count: 1820 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+belongs_to_collection, budget, genres, homepage, id, imdb_id, original_title, overview, popularity, poster_path, production_companies, production_countries, release_date, revenue, spoken_languages, tagline, title, vote_count
+
+Summary Statistics for Numerical Columns:
+                count          mean           std  min   25%   50%    75%  \
+revenue       45460.0  1.120935e+07  6.433225e+07  0.0   0.0   0.0    0.0   
+runtime       45203.0  9.412820e+01  3.840781e+01  0.0  85.0  95.0  107.0   
+vote_average  45460.0  5.618207e+00  1.924216e+00  0.0   5.0   6.0    6.8   
+vote_count    45460.0  1.098973e+02  4.913104e+02  0.0   3.0  10.0   34.0   
+
+                       max  
+revenue       2.787965e+09  
+runtime       1.256000e+03  
+vote_average  1.000000e+01  
+vote_count    1.407500e+04  
+

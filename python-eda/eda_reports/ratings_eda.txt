@@ -1,0 +1,46 @@
+EDA Report for: Ratings
+==================================================
+
+Basic Info:
+Shape: (26024289, 4)
+Columns: ['userId', 'movieId', 'rating', 'timestamp']
+Memory Usage: 813259.16 KB
+
+Data Types:
+userId         int64
+movieId        int64
+rating       float64
+timestamp      int64
+dtype: object
+
+Column Type Distribution:
+Numerical: 4
+Categorical: 0
+Datetime: 0
+
+Number of duplicate rows (hashable cols only): 0
+
+No columns with null values.
+
+Unique Values per Column:
+userId: 270896 unique values
+movieId: 45115 unique values
+rating: 10 unique values
+timestamp: 20549435 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+userId, movieId, timestamp
+
+Summary Statistics for Numerical Columns:
+                count          mean           std          min          25%  \
+userId     26024289.0  1.350371e+05  7.817620e+04          1.0      67164.0   
+movieId    26024289.0  1.584911e+04  3.108526e+04          1.0       1073.0   
+rating     26024289.0  3.528090e+00  1.065443e+00          0.5          3.0   
+timestamp  26024289.0  1.171258e+09  2.052889e+08  789652004.0  990754461.0   
+
+                    50%           75%           max  
+userId     1.351630e+05  2.026930e+05  2.708960e+05  
+movieId    2.583000e+03  6.503000e+03  1.762750e+05  
+rating     3.500000e+00  4.000000e+00  5.000000e+00  
+timestamp  1.151716e+09  1.357578e+09  1.501830e+09  
+
